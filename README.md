@@ -21,5 +21,5 @@ Conteúdo:
 - Conhecendo HTML & CSS
 - Trabalhando com semantica
 
-✨ Sobre Mim
- Meu nome é Julio Silvestre, tenho 29 anos e moro em Recife-PE. Sou graduado em Administração de Empresas, mas estou em transição de carreira para a área de desenvolvimento de software. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas para aprimorar meus conhecimentos e habilidades nessa área.
+## ✨ Sobre Mim
+ - Meu nome é Julio Silvestre, tenho 29 anos e moro em Recife-PE. Sou graduado em Administração de Empresas, mas estou em transição de carreira para a área de desenvolvimento de software. Atualmente, estou cursando Análise e Desenvolvimento de Sistemas para aprimorar meus conhecimentos e habilidades nessa área.
