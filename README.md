@@ -11,7 +11,7 @@ Este projeto foi criado como parte do programa Santander Coders, uma iniciativa 
 - Linguagem de Programação: [HTML,CSS & JavaScript]
 - Frameworks / Bibliotecas: [Angular]
 
-### Módulo 1 - Front end estático 🖥️
+### - Módulo 1 - Front end estático 🖥️
 
 🔍 Neste módulo, aprendemos sobre o mundo do desenvolvimento web usando html,css e javascript - para criação de páginas estáticas.
 
