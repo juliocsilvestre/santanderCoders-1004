@@ -1,0 +1,300 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, sans-serif;
+}
+
+header {
+	background: #f2f2f2;
+}
+
+nav,
+main {
+	max-width: 1366px;
+	margin: 0 auto;
+}
+
+/* Top bar styles */
+.top-bar {
+	background-color: #252222;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	padding-left: 10px;
+	justify-content: space-between;
+}
+
+.promo-text {
+	color: white;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	transform: translateX(333%);
+}
+
+.close-button {
+	background-color: #252222;
+	border: none;
+	font-size: 18px;
+	cursor: pointer;
+	align-items: flex-start;
+}
+
+.close-button img {
+	width: 20px;
+	height: 20px;
+	margin-right: 30px;
+}
+
+.close-button img:hover {
+	cursor: pointer;
+}
+
+.right-close-button {
+	margin-left: auto;
+}
+
+.right-menu {
+	display: flex;
+}
+
+/* Navigation styles */
+.main-navigation {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+}
+
+.logo {
+	display: flex;
+	width: 30px;
+	height: 30px;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+.menu-items {
+	list-style: none;
+	display: flex;
+}
+
+.menu-items li:not(:last-of-type) {
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+/* Right menu styles */
+.right-menu {
+	display: flex;
+}
+
+.search,
+.bag,
+.login {
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+.main-container {
+	margin-top: 15px;
+}
+
+.info-container {
+	display: flex;
+	align-items: flex-end;
+	padding: 10px;
+}
+
+.info-content {
+	margin-bottom: 20px;
+}
+
+.info-content h2 {
+	font-size: 40px;
+	margin-bottom: 27px;
+}
+
+.info-item-hero {
+	width: 70vw;
+	margin-right: 10px;
+}
+
+.info-hero-banner {
+	width: 100%;
+	height: 350px;
+	background: url(../assets/charizard.png) rgba(0, 0, 0, 0.5);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+}
+
+.info-item {
+	width: 30vw;
+	height: 500px;
+	background: url(../assets/pikachu.png) rgba(0, 0, 0, 0.5);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-blend-mode: multiply;
+}
+
+.text-info {
+	color: white;
+	display: flex;
+	justify-content: space-between;
+}
+
+.text-info button {
+	background-color: white;
+	border-radius: 8px;
+	padding: 4px 10px;
+	border: none;
+	font-weight: bold;
+}
+
+.info-img {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 20px;
+}
+
+.publi {
+	padding-top: 125px;
+	padding-bottom: 125px;
+	text-align: left;
+}
+
+.highlight-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.highlight-text {
+	display: flex;
+	align-items: center;
+}
+
+.highlight-buttons {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.highlight-buttons button {
+	background-color: white;
+	color: black;
+	border: none;
+	padding: 8px 16px;
+	border-radius: 4px;
+	cursor: pointer;
+	border: 1px solid black;
+	border-radius: 20px;
+}
+
+.highlight-buttons button:hover {
+	background-color: #252222;
+	color: white;
+}
+
+.products-featured-container {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.item-image {
+	width: 320px;
+	height: 320px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-bottom: 10px;
+	position: relative;
+}
+.products-featured p {
+	margin: 0;
+}
+
+.item-image::before {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	background-color: white;
+	color: black;
+	padding: 4px;
+	font-size: 10px;
+	font-weight: bold;
+	border-radius: 4px;
+	border: 1px solid #ccc;
+}
+
+.products-featured:nth-child(1) .item-image {
+	background: url("/01-modulo-FrontEndEstatico/exercise02/assets/munchlax-funkopop.png");
+	background-size: cover;
+}
+
+.products-featured:nth-child(2) .item-image {
+	background: url("/01-modulo-FrontEndEstatico/exercise02/assets/raichu-pelucia.jpg");
+	background-size: cover;
+}
+
+.products-featured:nth-child(3) .item-image {
+	background: url("/01-modulo-FrontEndEstatico/exercise02/assets/dragonite-funkoPop.png");
+	background-size: cover;
+}
+
+.products-featured:nth-child(4) .item-image {
+	background: url("/01-modulo-FrontEndEstatico/exercise02/assets/charmander-pelucia.png");
+	background-size: cover;
+}
+
+.products-featured:nth-child(1) .item-image::before,
+.products-featured:nth-child(3) .item-image::before {
+	content: "Funkopop";
+}
+
+.products-featured:nth-child(2) .item-image::before,
+.products-featured:nth-child(4) .item-image::before {
+	content: "Pelúcia";
+}
+
+.products-featured {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: left;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 10px;
+	margin-bottom: 20px;
+	text-align: left;
+	font-size: 15px;
+	margin-right: 5px;
+}
+
+.product-name {
+	font-weight: bold;
+	margin-bottom: 5px;
+	text-align: left;
+	align-self: baseline;
+}
+
+.product-price {
+	font-size: 12px;
+	text-align: left;
+	align-self: baseline;
+	padding-top: 5px;
+}
+
+.products-featured:last-child {
+	margin-right: 0;
+}
