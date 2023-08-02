@@ -238,22 +238,22 @@ main {
 }
 
 .products-featured:nth-child(1) .item-image {
-	background: url("/01-modulo-FrontEndEstatico/exercise02/assets/munchlax-funkopop.png");
+	background: url("../assets/munchlax-funkopop.png");
 	background-size: cover;
 }
 
 .products-featured:nth-child(2) .item-image {
-	background: url("/01-modulo-FrontEndEstatico/exercise02/assets/raichu-pelucia.jpg");
+	background: url("../assets/raichu-pelucia.jpg");
 	background-size: cover;
 }
 
 .products-featured:nth-child(3) .item-image {
-	background: url("/01-modulo-FrontEndEstatico/exercise02/assets/dragonite-funkoPop.png");
+	background: url("../assets/dragonite-funkoPop.png");
 	background-size: cover;
 }
 
 .products-featured:nth-child(4) .item-image {
-	background: url("/01-modulo-FrontEndEstatico/exercise02/assets/charmander-pelucia.png");
+	background: url("../assets/charmander-pelucia.png");
 	background-size: cover;
 }
 
