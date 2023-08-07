@@ -26,4 +26,4 @@ console.log("Exemplo de uso de constante");
 const nome = prompt("Qual é o seu nome?");
 console.log("Olá " + nome + " seja bem vindo");
 
-nome = "Jaque" // não é possível ser atribuído pois constantes são imutáveis dentro da javscript
+nome = "Jaque"; // não é possível ser atribuído pois constantes são imutáveis dentro da javscript
