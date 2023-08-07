@@ -119,21 +119,170 @@ console.log("Array:", numeros);
 console.log("Maior valor:", maiorNumero);
 
 9- Escreva uma função que gere um número inteiro aleatório entre dois valores dados como argumentos.
+function gerarNumeroAleatorio(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    const numeroAleatorio = Math.floor(Math.random() * (max - min + 1)) + min;
+    return numeroAleatorio;
+}
+const numeroAleatorio = gerarNumeroAleatorio(1, 10);
+console.log(numeroAleatorio);
+
 10- Crie um programa que verifique se um número dado pelo usuário é um número primo usando uma função.
+function verificarNumeroPrimo(numero) {
+    if (numero <= 1) {
+    return false;
+    }
+
+    for (let i = 2; i <= Math.sqrt(numero); i++) {
+    if (numero % i === 0) {
+        return false;
+    }
+}
+    return true;
+}
+
+const numeroUsuario = prompt("Digite um número inteiro para verificar se é primo:");
+const numeroConvertido = parseInt(numeroUsuario);
+
+if (verificarNumeroPrimo(numeroConvertido)) {
+    alert("O número é primo.");
+} else {
+    alert("O número não é primo.");
+}
 
 Coerção e Tipos de Dados:
 
 11- Declare uma variável com valor "5" (string) e outra variável com valor 2 (número). Multiplique as duas variáveis e explique o resultado.
+const valorString = "5";
+const valorNumero = 2;
+const resultado = valorString * valorNumero;
+console.log(resultado);
+// O resultado é 10, pois o JavaScript converteu a string "5" para o número 5 e realizou a multiplicação.
+
+
 12- Converta a string "123" em um número inteiro e armazene-o em uma variável.
+const minhaString = "123";
+const meuNumero = parseInt(minhaString);
+
+console.log(meuNumero);
+
 13- Escreva um programa que adicione um número e uma string. 
+const numero = 420;
+const minhaString = " é a resposta para tudo.";
+
+const resultado = numero + minhaString;
+
+console.log(resultado);
+
+
 14- Explique o resultado e discuta a coerção que ocorre.
+Aqui ocorre a coerção implícita. O JavaScript, ao perceber que o operador (+) 
+está sendo utilizado com um número e uma string, realiza a coerção automática 
+para que ambos os operandos sejam do mesmo tipo.
+Nesse caso, ele converte o número 420 em uma string antes de realizar a concatenação.
+
+
 15- Declare uma variável com o valor null e outra variável com o valor undefined. Verifique se são iguais em valor e tipo.
+const valorNull = null;
+const valorUndefined = undefined;
+
+const saoIguais = valorNull === valorUndefined;
+console.log(saoIguais);
+
 16- Crie um programa que determine se uma variável é do tipo função usando o operador typeof.
+const minhaVariavel = 420;
+
+if (typeof minhaVariavel === 'function') {
+    console.log('A variável é uma função.');
+} else {
+    console.log('A variável não é uma função.');
+}
 
 Operadores Matemáticos e Lógicos:
 
 18- Escreva um programa que calcule o resultado da expressão: (10 + 5) * 3 / 20.
+
+const resultado = (10 + 5) * 3 / 20;
+function imprimirResultado(resultado) {
+    console.log("O resultado da expressão (10 + 5) * 3 / 20 é :" + resultado )
+}
+
+imprimirResultado(resultado);
+
 19- Crie uma função que verifique se um número é positivo e ímpar ao mesmo tempo.
-20- Implemente um programa que determine se um ano fornecido pelo usuário é bissexto ou não, considerando as regras: (a) Anos divisíveis por 4 são bissextos; (b) Anos divisíveis por 100 não são bissextos, a menos que também sejam divisíveis por 400.
-21- Escreva uma função que determine se uma pessoa tem permissão para entrar em um clube: idade mínima de 18 anos e não estar na lista de membros banidos (use operadores lógicos).
-22- Crie um programa que simule um sistema de login. Peça ao usuário um nome de usuário e uma senha, e verifique se correspondem aos valores esperados. */
+
+function positivoEImpar(numero) {
+    if (numero > 0 && numero % 2 !== 0) {
+    console.log("O número é positivo e ímpar.")
+        return true;
+    } else {
+        console.log("O número não é positivo e ímpar.")
+    return false;
+    }
+}
+
+
+20- Implemente um programa que determine se um ano fornecido pelo usuário é bissexto ou não, 
+considerando as regras: 
+(a) Anos divisíveis por 4 são bissextos; 
+(b) Anos divisíveis por 100 não são bissextos, a menos que também sejam divisíveis por 400.
+
+function anoBissexto(ano) {
+    if ((ano % 4 === 0 && ano % 100 !== 0) || ano % 400 === 0) {
+        return true;
+        } else {
+            return false;
+    }
+}
+
+const anoUsuario = prompt("Digite um ano para verificar se é bissexto:");
+const anoConvertido = parseInt(anoUsuario);
+
+if (anoBissexto(anoConvertido)) {
+    console.log(anoConvertido + " é um ano bissexto.");
+    }   else {
+            console.log(anoConvertido + " não é um ano bissexto.");
+}
+
+21- Escreva uma função que determine se uma pessoa tem permissão para entrar em um clube: 
+idade mínima de 18 anos 
+e não estar na lista de membros banidos (use operadores lógicos).
+
+const membrosBanidos = ["Clovis", "Ken", "Java"];
+
+function verificacao(idade, nome) {
+    if (idade >= 18 && !membrosBanidos.includes(nome)) {
+    return true;
+    } else {
+    return false;
+    }
+}
+
+const nomeUsuario = prompt("Digite seu nome:");
+const idadeUsuario = prompt("Digite sua idade:");
+const idadeConvertida = parseInt(idadeUsuario);
+
+if (verificacao(idadeConvertida, nomeUsuario)) {
+    console.log("Bem-vindo(a) ao clube!");
+} else {
+    console.log("Você não tem permissão para entrar no clube.");
+}
+
+
+22- Crie um programa que simule um sistema de login. 
+Peça ao usuário um nome de usuário e uma senha, e 
+verifique se correspondem aos valores esperados. 
+
+const nomeUsuarioUtilizado = "usuario420";
+const senha = "senha420";
+
+const nomeUsuario = prompt("Digite o nome de usuário:");
+const senha = prompt("Digite a senha:");
+
+if (nomeUsuario === nomeUsuarioUtilizado && senha === senhaEsperada) {
+    console.log("Login bem-sucedido! Bem-vindo(a), " + nomeUsuario + "!");
+} else {
+    console.log("Nome de usuário ou senha incorretos. Tente novamente.");
+}
+*/
