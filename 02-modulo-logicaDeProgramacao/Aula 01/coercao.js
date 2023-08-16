@@ -29,9 +29,9 @@ if (value) {
 
 
 console.log(`Coerção Explícita: A coerção explícita
-  ocorre quando você explicitamente converte um 
-  valor de um tipo para outro usando funções ou 
-  operadores de conversão de tipo.
+ ocorre quando você explicitamente converte um 
+ valor de um tipo para outro usando funções ou 
+ operadores de conversão de tipo.
 `)
 
 
