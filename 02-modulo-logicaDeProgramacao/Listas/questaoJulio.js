@@ -10,7 +10,7 @@ function contagemRegressivaJulio() {
     let remainingTime = totalTime;
 
     if (isNaN(totalTime) || totalTime <= 0) {
-        console.log("Tempo inválido. A contagem não será iniciada.");
+        console.log("Tempo inválido. A contagem não será iniciada, me ajude a te ajudar.");
         return;
     }
 
