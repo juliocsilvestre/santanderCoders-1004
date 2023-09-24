@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ada Gourmet: Churrascômetro</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Churrascômetro</h1>
+        <div class="calculator">
+            <div class="row">
+                <div class="input-group">
+                    <label for="people">Pessoas</label>
+                    <input type="number" class="input-valid" id="people" value="0">
+                    <div class="button-group">
+                        <button class="input-group__button--small">-</button>
+                        <button class="input-group__button--small">+</button>
+                    </div>
+                </div>                
+            </div>
+            <div class="row">
+                <div class="input-group">
+                    <button onclick="alert('script inline')" class="input-group__button--big">Calcular</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        alert("script embed")
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
